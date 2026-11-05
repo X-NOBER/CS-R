@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS RIOT</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <canvas id="view"></canvas>
+    <div id="hud" class="hidden">
+      <div class="status hidden" id="status">Booting CS RIOT…</div>
+      <div class="mission-bar hidden" id="missionBar">
+        <span id="missionTeam">CT</span>
+        <span id="missionName">Warehouse Entry</span>
+        <span id="missionPhase">BUY PHASE</span>
+        <span id="buyTimer">0:60</span>
+        <span id="money">$800</span>
+      </div>
+      <div class="crosshair" id="crosshair"></div>
+      <div class="hitmarker hidden" id="hitmarker"></div>
+      <div class="dmg-indicator hidden" id="dmgIndicator"></div>
+      <div class="click-hint hidden" id="hint">CLICK TO ENTER THE RANGE · B BUY MENU</div>
+
+      <div class="panel bottom">
+        <div class="stat"><b id="health">100</b><span>HEALTH</span></div>
+        <div class="stat armor"><b id="armor">0</b><span>ARMOR</span></div>
+        <div class="stat ammo"><b id="ammo">30 | 90</b><span>AMMO</span></div>
+        <div class="stat money-stat"><b id="moneyHud">$800</b><span>MONEY</span></div>
+      </div>
+    </div>
+
+    <div id="devHud" class="hidden">
+      <aside class="panel left">
+        <h1>CS RIOT</h1>
+        <div class="sub" id="sourceLabel">Reanims Reborn · Normal screen</div>
+        <label>Pack</label>
+        <select id="pack">
+          <option value="reanims" selected>Reanims Reborn</option>
+          <option value="original">Original CS 1.6</option>
+        </select>
+        <div id="reanimsOpts">
+          <label>Screen</label>
+          <select id="screen">
+            <option value="normal" selected>Normal screen</option>
+            <option value="wide">Wide screen</option>
+          </select>
+          <label>Team hands</label>
+          <select id="teamHands">
+            <option value="ct" selected>CT</option>
+            <option value="t">Terrorist</option>
+          </select>
+        </div>
+        <div id="originalOpts" hidden>
+          <label>Source</label>
+          <select id="source">
+            <option value="auto">MDL mesh + SMD anims</option>
+            <option value="mdl">Compiled .mdl only</option>
+            <option value="smd">Source .smd mesh + anims</option>
+          </select>
+          <label>Hands (SMD mesh)</label>
+          <select id="hands">
+            <option value="cs">CS 1.6</option>
+            <option value="shaped">CS shaped</option>
+            <option value="cz">Condition Zero</option>
+          </select>
+        </div>
+        <div class="weapon-list" id="weapons"></div>
+        <label>Players</label>
+        <div class="weapon-list" id="players"></div>
+      </aside>
+
+      <aside class="panel right">
+        <h1 id="weaponName">AK-47</h1>
+        <div class="sub" id="weaponMeta">—</div>
+        <label>Sequences</label>
+        <div class="anims" id="anims"></div>
+        <button id="inspectBtn">Orbit inspect</button>
+
+        <details class="vm-settings" open>
+          <summary>Viewmodel (FPS)</summary>
+          <p class="sub">Live first-person offset. Saved in this browser.</p>
+          <div class="slider-row" data-vm="x"><span>Pos X</span><input type="range" min="-20" max="20" step="0.05" /><input type="number" step="0.05" /></div>
+          <div class="slider-row" data-vm="y"><span>Pos Y</span><input type="range" min="-20" max="20" step="0.05" /><input type="number" step="0.05" /></div>
+          <div class="slider-row" data-vm="z"><span>Pos Z</span><input type="range" min="-30" max="30" step="0.05" /><input type="number" step="0.05" /></div>
+          <div class="slider-row" data-vm="rx"><span>Rot X</span><input type="range" min="-180" max="180" step="0.5" /><input type="number" step="0.5" /></div>
+          <div class="slider-row" data-vm="ry"><span>Rot Y</span><input type="range" min="-180" max="180" step="0.5" /><input type="number" step="0.5" /></div>
+          <div class="slider-row" data-vm="rz"><span>Rot Z</span><input type="range" min="-180" max="180" step="0.5" /><input type="number" step="0.5" /></div>
+          <div class="slider-row" data-vm="scale"><span>Scale</span><input type="range" min="0.2" max="3" step="0.01" /><input type="number" step="0.01" /></div>
+          <div class="slider-row" data-vm="fov"><span>FOV</span><input type="range" min="40" max="120" step="1" /><input type="number" step="1" /></div>
+          <button id="vmReset" type="button">Reset viewmodel</button>
+        </details>
+      </aside>
+    </div>
+
+    <div id="startMenu" class="start-menu">
+      <div class="start-inner">
+        <header>
+          <div>
+            <p class="start-kicker">GoldSrc Campaign</p>
+            <h1>CS RIOT</h1>
+            <p class="sub">Arsenal briefing — body and head damage per shot</p>
+          </div>
+          <div class="start-actions">
+            <div class="team-select" role="group" aria-label="Team">
+              <button type="button" id="pickCT" class="team-btn ct active">CT</button>
+              <button type="button" id="pickT" class="team-btn t">Terrorist</button>
+            </div>
+            <button type="button" id="startPlay">Start match</button>
+            <p class="start-hint">Pick a team · Enter to start · click a gun to read damage</p>
+          </div>
+        </header>
+        <div class="start-layout">
+          <div id="startArsenal" class="start-arsenal"></div>
+          <aside class="start-detail">
+            <h2 id="startDetailName">Select a gun</h2>
+            <div class="start-dmg">
+              <div>
+                <b id="startBody">—</b>
+                <span>BODY</span>
+                <small id="startBodyHint"></small>
+              </div>
+              <div class="head">
+                <b id="startHead">—</b>
+                <span>HEAD</span>
+                <small id="startHeadHint"></small>
+              </div>
+            </div>
+            <p class="sub" id="startDetailStats"></p>
+            <p id="startDetailBlurb">Click a weapon to read its damage.</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <div id="buyMenu" class="buy-menu hidden">
+      <div class="buy-inner">
+        <header>
+          <h1>Buy Menu</h1>
+          <div class="buy-meta">
+            <span id="buyMoney">$800</span>
+            <span id="buyClock">0:60</span>
+            <button type="button" id="buyReady">I'm ready</button>
+            <button type="button" id="buyClose">Close (B)</button>
+          </div>
+        </header>
+        <div class="buy-layout">
+          <nav id="buyCats" class="buy-cats"></nav>
+          <div id="buyItems" class="buy-items"></div>
+          <aside class="buy-detail" id="buyDetail">
+            <h2 id="buyDetailName">Select a weapon</h2>
+            <p class="sub" id="buyDetailStats"></p>
+            <p id="buyDetailBlurb"></p>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3012 @@
+{
+  "baseUrl": "/cs16",
+  "hands": {
+    "cs": "01_hands/CS_hands_reference.smd",
+    "shaped": "01_hands/CS_shaped_hands_reference.smd",
+    "cz": "01_hands/CZ_hands_reference.smd"
+  },
+  "weapons": [
+    {
+      "id": "ak47",
+      "name": "AK-47",
+      "category": "rifle",
+      "qc": "v_ak47.qc",
+      "mdl": "09_output/v_ak47.mdl",
+      "cd": "ak47",
+      "textures": [
+        "01_hands",
+        "ak47"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "ak47/CS_ak47_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 30.0,
+          "loop": true
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 20.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 20.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 20.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 30,
+        "reserve": 90,
+        "auto": true,
+        "damage": 36
+      }
+    },
+    {
+      "id": "aug",
+      "name": "AUG",
+      "category": "rifle",
+      "qc": "v_aug.qc",
+      "mdl": "09_output/v_aug.mdl",
+      "cd": "aug",
+      "textures": [
+        "01_hands",
+        "aug"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "aug/CS_aug_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 30.0,
+          "loop": true
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 35.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 30,
+        "reserve": 90,
+        "auto": true,
+        "damage": 32
+      }
+    },
+    {
+      "id": "awp",
+      "name": "AWP",
+      "category": "sniper",
+      "qc": "v_awp.qc",
+      "mdl": "09_output/v_awp.mdl",
+      "cd": "awp",
+      "textures": [
+        "01_hands",
+        "awp"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "awp/CS_awp_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 10,
+        "reserve": 30,
+        "auto": false,
+        "damage": 115
+      }
+    },
+    {
+      "id": "c4",
+      "name": "C4",
+      "category": "equip",
+      "qc": "v_c4.qc",
+      "mdl": "09_output/v_c4.mdl",
+      "cd": "c4",
+      "textures": [
+        "01_hands",
+        "c4"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "c4/CS_c4_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 12.0,
+          "loop": true
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "drop",
+          "smd": "drop",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "pressbutton",
+          "smd": "pressbutton",
+          "fps": 33.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 1,
+        "reserve": 0,
+        "auto": false,
+        "damage": 0
+      }
+    },
+    {
+      "id": "deagle",
+      "name": "Desert Eagle",
+      "category": "pistol",
+      "qc": "v_deagle.qc",
+      "mdl": "09_output/v_deagle.mdl",
+      "cd": "deagle",
+      "textures": [
+        "01_hands",
+        "deagle"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "deagle/CS_deagle_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_empty",
+          "smd": "shoot_empty",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 7,
+        "reserve": 35,
+        "auto": false,
+        "damage": 54
+      }
+    },
+    {
+      "id": "elite",
+      "name": "Dual Elites",
+      "category": "pistol",
+      "qc": "v_elite.qc",
+      "mdl": "09_output/v_elite.mdl",
+      "cd": "elite",
+      "textures": [
+        "01_hands",
+        "elite"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "elite/CS_elite_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "idle_leftempty",
+          "smd": "idle_leftempty",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot_left1",
+          "smd": "shoot_left1",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_left2",
+          "smd": "shoot_left2",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_left3",
+          "smd": "shoot_left3",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_left4",
+          "smd": "shoot_left4",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_left5",
+          "smd": "shoot_left5",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_leftlast",
+          "smd": "shoot_leftlast",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_right1",
+          "smd": "shoot_right1",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_right2",
+          "smd": "shoot_right2",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_right3",
+          "smd": "shoot_right3",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_right4",
+          "smd": "shoot_right4",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_right5",
+          "smd": "shoot_right5",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_rightlast",
+          "smd": "shoot_rightlast",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 30,
+        "reserve": 120,
+        "auto": false,
+        "damage": 38
+      }
+    },
+    {
+      "id": "famas",
+      "name": "FAMAS",
+      "category": "rifle",
+      "qc": "v_famas.qc",
+      "mdl": "09_output/v_famas.mdl",
+      "cd": "famas",
+      "textures": [
+        "01_hands",
+        "famas"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "famas/CS_famas_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 30.0,
+          "loop": true
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 35.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 25,
+        "reserve": 90,
+        "auto": true,
+        "damage": 30
+      }
+    },
+    {
+      "id": "fiveseven",
+      "name": "Five-SeveN",
+      "category": "pistol",
+      "qc": "v_fiveseven.qc",
+      "mdl": "09_output/v_fiveseven.mdl",
+      "cd": "fiveseven",
+      "textures": [
+        "01_hands",
+        "fiveseven"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "fiveseven/CS_fiveseven_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 36.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 36.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_empty",
+          "smd": "shoot_empty",
+          "fps": 36.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 20,
+        "reserve": 100,
+        "auto": false,
+        "damage": 25
+      }
+    },
+    {
+      "id": "flashbang",
+      "name": "Flashbang",
+      "category": "equip",
+      "qc": "v_flashbang.qc",
+      "mdl": "09_output/v_flashbang.mdl",
+      "cd": "grenades",
+      "textures": [
+        "01_hands",
+        "grenades"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "grenades/CS_flashbang_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 30.0,
+          "loop": true
+        },
+        {
+          "name": "pullpin",
+          "smd": "pullpin",
+          "fps": 41.0,
+          "loop": false
+        },
+        {
+          "name": "throw",
+          "smd": "throw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "deploy",
+          "smd": "deploy",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 1,
+        "reserve": 2,
+        "auto": false,
+        "damage": 0
+      }
+    },
+    {
+      "id": "g3sg1",
+      "name": "G3SG1",
+      "category": "sniper",
+      "qc": "v_g3sg1.qc",
+      "mdl": "09_output/v_g3sg1.mdl",
+      "cd": "g3sg1",
+      "textures": [
+        "01_hands",
+        "g3sg1"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "g3sg1/CS_g3sg1_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot",
+          "smd": "shoot",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 20,
+        "reserve": 60,
+        "auto": true,
+        "damage": 80
+      }
+    },
+    {
+      "id": "galil",
+      "name": "Galil",
+      "category": "rifle",
+      "qc": "v_galil.qc",
+      "mdl": "09_output/v_galil.mdl",
+      "cd": "galil",
+      "textures": [
+        "01_hands",
+        "galil"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "galil/CS_galil_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 30.0,
+          "loop": true
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 34.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 35.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 35,
+        "reserve": 90,
+        "auto": true,
+        "damage": 30
+      }
+    },
+    {
+      "id": "glock18",
+      "name": "Glock-18",
+      "category": "pistol",
+      "qc": "v_glock18.qc",
+      "mdl": "09_output/v_glock18.mdl",
+      "cd": "glock18",
+      "textures": [
+        "01_hands",
+        "glock18"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "glock18/CS_glock18_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "idle2",
+          "smd": "idle2",
+          "fps": 20.0,
+          "loop": true
+        },
+        {
+          "name": "idle3",
+          "smd": "idle3",
+          "fps": 18.0,
+          "loop": true
+        },
+        {
+          "name": "shoot",
+          "smd": "shoot",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_empty",
+          "smd": "shoot_empty",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 45.0,
+          "loop": false
+        },
+        {
+          "name": "holster",
+          "smd": "holster",
+          "fps": 25.0,
+          "loop": false
+        },
+        {
+          "name": "add_silencer",
+          "smd": "add_silencer",
+          "fps": 20.0,
+          "loop": false
+        },
+        {
+          "name": "draw2",
+          "smd": "draw2",
+          "fps": 45.0,
+          "loop": false
+        },
+        {
+          "name": "reload2",
+          "smd": "reload2",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 20,
+        "reserve": 120,
+        "auto": false,
+        "damage": 25
+      }
+    },
+    {
+      "id": "hegrenade",
+      "name": "HE Grenade",
+      "category": "equip",
+      "qc": "v_hegrenade.qc",
+      "mdl": "09_output/v_hegrenade.mdl",
+      "cd": "grenades",
+      "textures": [
+        "01_hands",
+        "grenades"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "grenades/CS_hegrenade_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 30.0,
+          "loop": true
+        },
+        {
+          "name": "pullpin",
+          "smd": "pullpin",
+          "fps": 41.0,
+          "loop": false
+        },
+        {
+          "name": "throw",
+          "smd": "throw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "deploy",
+          "smd": "deploy",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 1,
+        "reserve": 1,
+        "auto": false,
+        "damage": 98
+      }
+    },
+    {
+      "id": "knife",
+      "name": "Knife",
+      "category": "melee",
+      "qc": "v_knife.qc",
+      "mdl": "09_output/v_knife.mdl",
+      "cd": "knife",
+      "textures": [
+        "01_hands",
+        "knife"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "knife/CS_knife_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 12.0,
+          "loop": true
+        },
+        {
+          "name": "slash1",
+          "smd": "slash1",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "slash2",
+          "smd": "slash2",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 45.0,
+          "loop": false
+        },
+        {
+          "name": "stab",
+          "smd": "stab",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "stab_miss",
+          "smd": "stab_miss",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "midslash1",
+          "smd": "midslash1",
+          "fps": 55.0,
+          "loop": false
+        },
+        {
+          "name": "midslash2",
+          "smd": "midslash2",
+          "fps": 55.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 0,
+        "reserve": 0,
+        "auto": false,
+        "damage": 65
+      }
+    },
+    {
+      "id": "knife_r",
+      "name": "Knife (Classic)",
+      "category": "melee",
+      "qc": "v_knife_r.qc",
+      "mdl": "09_output/v_knife_r.mdl",
+      "cd": "knife_r",
+      "textures": [
+        "01_hands",
+        "knife_r"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "knife_r/CS_oldknife_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle3",
+          "smd": "idle3",
+          "fps": 15.0,
+          "loop": true
+        },
+        {
+          "name": "slash1",
+          "smd": "slash1",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "slash2",
+          "smd": "slash2",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "stab",
+          "smd": "stab",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "stab_miss",
+          "smd": "stab_miss",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "midslash1",
+          "smd": "midslash1",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "midslash2",
+          "smd": "midslash2",
+          "fps": 37.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 0,
+        "reserve": 0,
+        "auto": false,
+        "damage": 65
+      }
+    },
+    {
+      "id": "m249",
+      "name": "M249",
+      "category": "lmg",
+      "qc": "v_m249.qc",
+      "mdl": "09_output/v_m249.mdl",
+      "cd": "m249",
+      "textures": [
+        "01_hands",
+        "m249"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "m249/CS_m249_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 100,
+        "reserve": 200,
+        "auto": true,
+        "damage": 32
+      }
+    },
+    {
+      "id": "m3",
+      "name": "M3 Super 90",
+      "category": "shotgun",
+      "qc": "v_m3.qc",
+      "mdl": "09_output/v_m3.mdl",
+      "cd": "m3",
+      "textures": [
+        "01_hands",
+        "m3"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "m3/CS_m3_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 12.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 32.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "insert",
+          "smd": "insert",
+          "fps": 65.0,
+          "loop": false
+        },
+        {
+          "name": "after_reload",
+          "smd": "after_reload",
+          "fps": 38.0,
+          "loop": false
+        },
+        {
+          "name": "start_reload",
+          "smd": "start_reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 8,
+        "reserve": 32,
+        "auto": false,
+        "damage": 120
+      }
+    },
+    {
+      "id": "m4a1",
+      "name": "M4A1",
+      "category": "rifle",
+      "qc": "v_m4a1.qc",
+      "mdl": "09_output/v_m4a1.mdl",
+      "cd": "m4a1",
+      "textures": [
+        "01_hands",
+        "m4a1"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "m4a1/CS_m4a1_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 20.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 20.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 20.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "add_silencer",
+          "smd": "add_silencer",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "idle_unsil",
+          "smd": "idle_unsil",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1_unsil",
+          "smd": "shoot1_unsil",
+          "fps": 20.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2_unsil",
+          "smd": "shoot2_unsil",
+          "fps": 20.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3_unsil",
+          "smd": "shoot3_unsil",
+          "fps": 20.0,
+          "loop": false
+        },
+        {
+          "name": "reload_unsil",
+          "smd": "reload_unsil",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "draw_unsil",
+          "smd": "draw_unsil",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "detach_silencer",
+          "smd": "detach_silencer",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 30,
+        "reserve": 90,
+        "auto": true,
+        "damage": 32
+      }
+    },
+    {
+      "id": "mac10",
+      "name": "MAC-10",
+      "category": "smg",
+      "qc": "v_mac10.qc",
+      "mdl": "09_output/v_mac10.mdl",
+      "cd": "mac10",
+      "textures": [
+        "01_hands",
+        "mac10"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "mac10/CS_mac10_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 12.0,
+          "loop": true
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 33.0,
+          "loop": false
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 27.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 27.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 27.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 30,
+        "reserve": 100,
+        "auto": true,
+        "damage": 29
+      }
+    },
+    {
+      "id": "mp5",
+      "name": "MP5",
+      "category": "smg",
+      "qc": "v_mp5.qc",
+      "mdl": "09_output/v_mp5.mdl",
+      "cd": "mp5",
+      "textures": [
+        "01_hands",
+        "mp5"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "mp5/CS_mp5_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 12.0,
+          "loop": true
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 38.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 30,
+        "reserve": 120,
+        "auto": true,
+        "damage": 26
+      }
+    },
+    {
+      "id": "p228",
+      "name": "P228",
+      "category": "pistol",
+      "qc": "v_p228.qc",
+      "mdl": "09_output/v_p228.mdl",
+      "cd": "p228",
+      "textures": [
+        "01_hands",
+        "p228"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "p228/CS_p228_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 34.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 34.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 34.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_empty",
+          "smd": "shoot_empty",
+          "fps": 34.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 13,
+        "reserve": 52,
+        "auto": false,
+        "damage": 32
+      }
+    },
+    {
+      "id": "p90",
+      "name": "P90",
+      "category": "smg",
+      "qc": "v_p90.qc",
+      "mdl": "09_output/v_p90.mdl",
+      "cd": "p90",
+      "textures": [
+        "01_hands",
+        "p90"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "p90/CS_p90_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 30.0,
+          "loop": true
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 50,
+        "reserve": 100,
+        "auto": true,
+        "damage": 21
+      }
+    },
+    {
+      "id": "scout",
+      "name": "Scout",
+      "category": "sniper",
+      "qc": "v_scout.qc",
+      "mdl": "09_output/v_scout.mdl",
+      "cd": "scout",
+      "textures": [
+        "01_hands",
+        "scout"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "scout/CS_scout_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot_1",
+          "smd": "shoot_1",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_2",
+          "smd": "shoot_2",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 10,
+        "reserve": 90,
+        "auto": false,
+        "damage": 75
+      }
+    },
+    {
+      "id": "sg550",
+      "name": "SG 550",
+      "category": "sniper",
+      "qc": "v_sg550.qc",
+      "mdl": "09_output/v_sg550.mdl",
+      "cd": "sg550",
+      "textures": [
+        "01_hands",
+        "sg550"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "sg550/CS_sg550_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot",
+          "smd": "shoot",
+          "fps": 45.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 45.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 28.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 30,
+        "reserve": 90,
+        "auto": true,
+        "damage": 70
+      }
+    },
+    {
+      "id": "sg552",
+      "name": "SG 552",
+      "category": "rifle",
+      "qc": "v_sg552.qc",
+      "mdl": "09_output/v_sg552.mdl",
+      "cd": "sg552",
+      "textures": [
+        "01_hands",
+        "sg552"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "sg552/CS_sg552_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 30.0,
+          "loop": true
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 35.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 30,
+        "reserve": 90,
+        "auto": true,
+        "damage": 33
+      }
+    },
+    {
+      "id": "shield_deagle",
+      "name": "Shield Deagle",
+      "category": "shield",
+      "qc": "v_shield_deagle.qc",
+      "mdl": "09_output/shield/v_shield_deagle.mdl",
+      "cd": "shield_deagle",
+      "textures": [
+        "01_hands",
+        "02_shield",
+        "deagle"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "shield_deagle/CS_deagle_right_reference.smd"
+        },
+        {
+          "name": "shield",
+          "file": "02_shield/CS_shield_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_empty",
+          "smd": "shoot_empty",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_idle",
+          "smd": "shield_idle",
+          "fps": 15.0,
+          "loop": false
+        },
+        {
+          "name": "shield_up",
+          "smd": "shield_up",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_down",
+          "smd": "shield_down",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 7,
+        "reserve": 35,
+        "auto": false,
+        "damage": 54
+      }
+    },
+    {
+      "id": "shield_fiveseven",
+      "name": "Shield Five-SeveN",
+      "category": "shield",
+      "qc": "v_shield_fiveseven.qc",
+      "mdl": "09_output/shield/v_shield_fiveseven.mdl",
+      "cd": "shield_fiveseven",
+      "textures": [
+        "01_hands",
+        "02_shield",
+        "fiveseven"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "shield_fiveseven/CS_fiveseven_right_reference.smd"
+        },
+        {
+          "name": "shield",
+          "file": "02_shield/CS_shield_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 36.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 36.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_empty",
+          "smd": "shoot_empty",
+          "fps": 36.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_idle",
+          "smd": "shield_idle",
+          "fps": 15.0,
+          "loop": false
+        },
+        {
+          "name": "shield_up",
+          "smd": "shield_up",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_down",
+          "smd": "shield_down",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 20,
+        "reserve": 100,
+        "auto": false,
+        "damage": 25
+      }
+    },
+    {
+      "id": "shield_flashbang",
+      "name": "Shield Flash",
+      "category": "shield",
+      "qc": "v_shield_flashbang.qc",
+      "mdl": "09_output/shield/v_shield_flashbang.mdl",
+      "cd": "shield_grenades",
+      "textures": [
+        "01_hands",
+        "02_shield",
+        "grenades"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "shield_grenades/CS_flashbang_right_reference.smd"
+        },
+        {
+          "name": "shield",
+          "file": "02_shield/CS_shield_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "pullpin",
+          "smd": "pullpin",
+          "fps": 41.0,
+          "loop": false
+        },
+        {
+          "name": "throw",
+          "smd": "throw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_idle",
+          "smd": "shield_idle",
+          "fps": 15.0,
+          "loop": false
+        },
+        {
+          "name": "shield_up",
+          "smd": "shield_up",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_down",
+          "smd": "shield_down",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 1,
+        "reserve": 2,
+        "auto": false,
+        "damage": 0
+      }
+    },
+    {
+      "id": "shield_glock18",
+      "name": "Shield Glock",
+      "category": "shield",
+      "qc": "v_shield_glock18.qc",
+      "mdl": "09_output/shield/v_shield_glock18.mdl",
+      "cd": "shield_glock18",
+      "textures": [
+        "01_hands",
+        "02_shield",
+        "glock18"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "shield_glock18/CS_glock18_right_reference.smd"
+        },
+        {
+          "name": "shield",
+          "file": "02_shield/CS_shield_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_empty",
+          "smd": "shoot_empty",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 45.0,
+          "loop": false
+        },
+        {
+          "name": "shield_idle",
+          "smd": "shield_idle",
+          "fps": 15.0,
+          "loop": false
+        },
+        {
+          "name": "shield_up",
+          "smd": "shield_up",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_down",
+          "smd": "shield_down",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 20,
+        "reserve": 120,
+        "auto": false,
+        "damage": 25
+      }
+    },
+    {
+      "id": "shield_hegrenade",
+      "name": "Shield HE",
+      "category": "shield",
+      "qc": "v_shield_hegrenade.qc",
+      "mdl": "09_output/shield/v_shield_hegrenade.mdl",
+      "cd": "shield_grenades",
+      "textures": [
+        "01_hands",
+        "02_shield",
+        "grenades"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "shield_grenades/CS_hegrenade_right_reference.smd"
+        },
+        {
+          "name": "shield",
+          "file": "02_shield/CS_shield_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "pullpin",
+          "smd": "pullpin",
+          "fps": 41.0,
+          "loop": false
+        },
+        {
+          "name": "throw",
+          "smd": "throw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_idle",
+          "smd": "shield_idle",
+          "fps": 15.0,
+          "loop": false
+        },
+        {
+          "name": "shield_up",
+          "smd": "shield_up",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_down",
+          "smd": "shield_down",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 1,
+        "reserve": 1,
+        "auto": false,
+        "damage": 98
+      }
+    },
+    {
+      "id": "shield_knife",
+      "name": "Shield Knife",
+      "category": "melee",
+      "qc": "v_shield_knife.qc",
+      "mdl": "09_output/shield/v_shield_knife.mdl",
+      "cd": "shield_knife",
+      "textures": [
+        "01_hands",
+        "02_shield",
+        "knife"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "knife/CS_knife_reference.smd"
+        },
+        {
+          "name": "shield",
+          "file": "02_shield/CS_shield_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "slash",
+          "smd": "slash",
+          "fps": 55.0,
+          "loop": false
+        },
+        {
+          "name": "hit",
+          "smd": "hit",
+          "fps": 55.0,
+          "loop": false
+        },
+        {
+          "name": "deploy",
+          "smd": "deploy",
+          "fps": 45.0,
+          "loop": false
+        },
+        {
+          "name": "shield_idle",
+          "smd": "shield_idle",
+          "fps": 15.0,
+          "loop": false
+        },
+        {
+          "name": "shield_up",
+          "smd": "shield_up",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_down",
+          "smd": "shield_down",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 0,
+        "reserve": 0,
+        "auto": false,
+        "damage": 65
+      }
+    },
+    {
+      "id": "shield_p228",
+      "name": "Shield P228",
+      "category": "shield",
+      "qc": "v_shield_p228.qc",
+      "mdl": "09_output/shield/v_shield_p228.mdl",
+      "cd": "shield_p228",
+      "textures": [
+        "01_hands",
+        "02_shield",
+        "p228"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "shield_p228/CS_p228_right_reference.smd"
+        },
+        {
+          "name": "shield",
+          "file": "02_shield/CS_shield_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 34.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 34.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_empty",
+          "smd": "shoot_empty",
+          "fps": 34.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 35.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_idle",
+          "smd": "shield_idle",
+          "fps": 15.0,
+          "loop": false
+        },
+        {
+          "name": "shield_up",
+          "smd": "shield_up",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_down",
+          "smd": "shield_down",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 13,
+        "reserve": 52,
+        "auto": false,
+        "damage": 32
+      }
+    },
+    {
+      "id": "shield_r",
+      "name": "Shield Five-SeveN",
+      "category": "shield",
+      "qc": "v_shield_r.qc",
+      "mdl": "09_output/v_shield_r.mdl",
+      "cd": "shield_fiveseven",
+      "textures": [
+        "01_hands",
+        "02_shield",
+        "fiveseven"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "shield_fiveseven/CS_fiveseven_right_reference.smd"
+        },
+        {
+          "name": "shield",
+          "file": "02_shield/CS_shield_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 36.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 36.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_empty",
+          "smd": "shoot_empty",
+          "fps": 36.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_idle",
+          "smd": "shield_idle",
+          "fps": 15.0,
+          "loop": false
+        },
+        {
+          "name": "shield_up",
+          "smd": "shield_up",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_down",
+          "smd": "shield_down",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 0,
+        "reserve": 0,
+        "auto": false,
+        "damage": 0
+      }
+    },
+    {
+      "id": "shield_smokegrenade",
+      "name": "Shield Smoke",
+      "category": "shield",
+      "qc": "v_shield_smokegrenade.qc",
+      "mdl": "09_output/shield/v_shield_smokegrenade.mdl",
+      "cd": "shield_grenades",
+      "textures": [
+        "01_hands",
+        "02_shield",
+        "grenades"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "shield_grenades/CS_smokegrenade_right_reference.smd"
+        },
+        {
+          "name": "shield",
+          "file": "02_shield/CS_shield_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "pullpin",
+          "smd": "pullpin",
+          "fps": 41.0,
+          "loop": false
+        },
+        {
+          "name": "throw",
+          "smd": "throw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_idle",
+          "smd": "shield_idle",
+          "fps": 15.0,
+          "loop": false
+        },
+        {
+          "name": "shield_up",
+          "smd": "shield_up",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_down",
+          "smd": "shield_down",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 1,
+        "reserve": 1,
+        "auto": false,
+        "damage": 0
+      }
+    },
+    {
+      "id": "shield_usp",
+      "name": "Shield USP",
+      "category": "shield",
+      "qc": "v_shield_usp.qc",
+      "mdl": "09_output/shield/v_shield_usp.mdl",
+      "cd": "shield_usp",
+      "textures": [
+        "01_hands",
+        "02_shield",
+        "usp"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "shield_usp/CS_usp_right_reference.smd"
+        },
+        {
+          "name": "shield",
+          "file": "02_shield/CS_shield_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_empty",
+          "smd": "shoot_empty",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 48.0,
+          "loop": false
+        },
+        {
+          "name": "shield_idle",
+          "smd": "shield_idle",
+          "fps": 15.0,
+          "loop": false
+        },
+        {
+          "name": "shield_up",
+          "smd": "shield_up",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shield_down",
+          "smd": "shield_down",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 12,
+        "reserve": 100,
+        "auto": false,
+        "damage": 34
+      }
+    },
+    {
+      "id": "smokegrenade",
+      "name": "Smoke Grenade",
+      "category": "equip",
+      "qc": "v_smokegrenade.qc",
+      "mdl": "09_output/v_smokegrenade.mdl",
+      "cd": "grenades",
+      "textures": [
+        "01_hands",
+        "grenades"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "grenades/CS_smokegrenade_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 30.0,
+          "loop": true
+        },
+        {
+          "name": "pullpin",
+          "smd": "pullpin",
+          "fps": 41.0,
+          "loop": false
+        },
+        {
+          "name": "throw",
+          "smd": "throw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "deploy",
+          "smd": "deploy",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 1,
+        "reserve": 1,
+        "auto": false,
+        "damage": 0
+      }
+    },
+    {
+      "id": "tmp",
+      "name": "TMP",
+      "category": "smg",
+      "qc": "v_tmp.qc",
+      "mdl": "09_output/v_tmp.mdl",
+      "cd": "tmp",
+      "textures": [
+        "01_hands",
+        "tmp"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "tmp/CS_tmp_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 12.0,
+          "loop": true
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 25.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 18.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_1",
+          "smd": "shoot_1",
+          "fps": 15.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_2",
+          "smd": "shoot_2",
+          "fps": 15.0,
+          "loop": false
+        },
+        {
+          "name": "shoot_3",
+          "smd": "shoot_3",
+          "fps": 15.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 30,
+        "reserve": 120,
+        "auto": true,
+        "damage": 20
+      }
+    },
+    {
+      "id": "ump45",
+      "name": "UMP-45",
+      "category": "smg",
+      "qc": "v_ump45.qc",
+      "mdl": "09_output/v_ump45.mdl",
+      "cd": "ump45",
+      "textures": [
+        "01_hands",
+        "ump45"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "ump45/CS_ump45_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle1",
+          "smd": "idle1",
+          "fps": 12.0,
+          "loop": true
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 33.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 32.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 32.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 32.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 25,
+        "reserve": 100,
+        "auto": true,
+        "damage": 30
+      }
+    },
+    {
+      "id": "usp",
+      "name": "USP",
+      "category": "pistol",
+      "qc": "v_usp.qc",
+      "mdl": "09_output/v_usp.mdl",
+      "cd": "usp",
+      "textures": [
+        "01_hands",
+        "usp"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "usp/CS_usp_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3",
+          "smd": "shoot3",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shootlast",
+          "smd": "shootlast",
+          "fps": 32.0,
+          "loop": false
+        },
+        {
+          "name": "reload",
+          "smd": "reload",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 48.0,
+          "loop": false
+        },
+        {
+          "name": "add_silencer",
+          "smd": "add_silencer",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "idle_unsil",
+          "smd": "idle_unsil",
+          "fps": 16.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1_unsil",
+          "smd": "shoot1_unsil",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2_unsil",
+          "smd": "shoot2_unsil",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shoot3_unsil",
+          "smd": "shoot3_unsil",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "shootlast_unsil",
+          "smd": "shootlast_unsil",
+          "fps": 32.0,
+          "loop": false
+        },
+        {
+          "name": "reload_unsil",
+          "smd": "reload_unsil",
+          "fps": 37.0,
+          "loop": false
+        },
+        {
+          "name": "draw_unsil",
+          "smd": "draw_unsil",
+          "fps": 48.0,
+          "loop": false
+        },
+        {
+          "name": "detach_silencer",
+          "smd": "detach_silencer",
+          "fps": 37.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 12,
+        "reserve": 100,
+        "auto": false,
+        "damage": 34
+      }
+    },
+    {
+      "id": "xm1014",
+      "name": "XM1014",
+      "category": "shotgun",
+      "qc": "v_xm1014.qc",
+      "mdl": "09_output/v_xm1014.mdl",
+      "cd": "xm1014",
+      "textures": [
+        "01_hands",
+        "xm1014"
+      ],
+      "bodies": [
+        {
+          "name": "hands",
+          "file": "01_hands/CS_hands_reference.smd"
+        },
+        {
+          "name": "weapon",
+          "file": "xm1014/CS_xm1014_reference.smd"
+        }
+      ],
+      "sequences": [
+        {
+          "name": "idle",
+          "smd": "idle",
+          "fps": 12.0,
+          "loop": true
+        },
+        {
+          "name": "shoot1",
+          "smd": "shoot1",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "shoot2",
+          "smd": "shoot2",
+          "fps": 40.0,
+          "loop": false
+        },
+        {
+          "name": "insert",
+          "smd": "insert",
+          "fps": 90.0,
+          "loop": false
+        },
+        {
+          "name": "after_reload",
+          "smd": "after_reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "start_reload",
+          "smd": "start_reload",
+          "fps": 30.0,
+          "loop": false
+        },
+        {
+          "name": "draw",
+          "smd": "draw",
+          "fps": 30.0,
+          "loop": false
+        }
+      ],
+      "stats": {
+        "clip": 7,
+        "reserve": 32,
+        "auto": false,
+        "damage": 120
+      }
+    }
+  ]
+}
